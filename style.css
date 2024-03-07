@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-color: #000;
+    color: #fff;
+}
+
+nav {
+     
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    padding:  0 150px;
+    
+}
+.logo{
+    width: 9.25rem;
+    height: 2.5rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(header-image.png);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+
+
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background-color: #db0001;
+    color: #fff;
+    font-size: 12px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    margin-left: 50px;
+    cursor: pointer;
+    
+}
+.lang-btn{
+
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.lang-btn img {
+    width: 10px;
+    margin: 4px;
+    
+}
+.sing-in{
+    font-size: 16px;
+    margin: 5px;
+}
+
+
+
+ main{
+
+    width: 100%;
+    height: 25vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+   
+}
+
+main h1 {
+    font-size: 62px;
+
+}
+
+main h2 , p  {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.email{
+    background-color: transparent;
+    width: 400px;
+    height: 56px;
+    border-radius: 1px;
+    
+}
+
+.btn{
+
+    width: 200px;
+    height: 56px;
+    background-color: #db0001;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-left: 15px;
+
+
+}
+
+.features{
+
+    padding: 50px 12%;
+    font-size: 22px;
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.text-col , .img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features{
+    border-top: 6px solid #333;
+}
+
+.features h2 {
+    font-size: 50px;
+}
+
+.freq {
+    padding: 20px 12%;
+    text-align: center;
+    border-top: 6px solid #333;
+    
+}
+
+.freq h2 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.accordion {
+    margin: 60px 12%;
+    width: 100%;
+    max-width: 750px;
+
+
+}
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+}
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type = "radio"]{
+    display: none;
+
+}
+
+.accordion .content {
+    background-color: #303030;
+    text-align: center;
+    pad: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked +label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+
+.accordion input[type="radio"]:checked +label::after{
+    transform: rotate(135deg);
+}
+
+footer{
+    
+    padding: 50px 8% 10px;
+    border-top: 6px solid #333;
+    margin-top: 50px;
+    
+   
+}
+
+ .container.cont2 h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .cont2 ul {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+ul a{
+    display: block;
+    padding: 10px;
+    color: #777;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+
